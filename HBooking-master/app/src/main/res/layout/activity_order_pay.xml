@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.nettactic.hotelbooking.activity.OrderPayActivity">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/view_title_order_pay" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="60dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_margin"
+                android:layout_marginRight="@dimen/main_margin"
+                android:orientation="vertical"
+                android:paddingBottom="29dp"
+                android:paddingTop="29dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_submit_ok"
+                    android:textColor="@color/order_text_color_j"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/order_id_add"
+                        android:textColor="@color/order_text_color_c"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/order_id_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_id_add"
+                        android:textColor="@color/order_text_color_c"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="13dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:text="@string/order_total_add"
+                        android:textColor="@color/order_text_color_c"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/order_total_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_total_add"
+                        android:textColor="@color/order_text_color_c"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_margin"
+                android:layout_marginRight="@dimen/main_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingBottom="29dp"
+                    android:paddingTop="29dp"
+                    android:text="@string/order_prompt_message"
+                    android:textColor="@color/order_text_color_c"
+                    android:textSize="16sp" />
+
+                <include layout="@layout/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/ali_pay_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/ali_pay" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/ali_pay"
+                        android:textColor="@color/order_text_color_c"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/wechat_pay_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/wechat_pay" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/wechat_pay"
+                        android:textColor="@color/order_text_color_c"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/reception_pay_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/reception_pay" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/reception_pay"
+                        android:textColor="@color/order_text_color_c"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+                <TextView
+                    android:id="@+id/see_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="22dp"
+                    android:background="@color/calendar_selected_range_bg"
+                    android:gravity="center"
+                    android:text="@string/see_order"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

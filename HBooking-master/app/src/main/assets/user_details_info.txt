@@ -1,0 +1,75 @@
+{
+    "code": "0",
+    "msg": "会员信息获取成功",
+    "result": {
+        "account_info": {
+            "id": "9527",
+            "token": "会员token",
+            "name": "白百何",
+            "sex": "false",
+            "mobile": "13567890000",
+            "email": "baibaihe@163.com",
+            "is_save_occupancy": "false",
+            "is_save_booker": "false",
+            "card": "9900003673",
+            "type": "金卡",
+            "point": "58888"
+        },
+        "promotion_info": {
+            "id": "",
+            "token":"",
+            "name": "",
+            "card": "",
+            "type": "",
+            "point": "0"
+        },
+        "common_occupancy": [
+            {
+                "id": "0",
+                "occupancy_name": "陈羽凡",
+                "occupancy_sex": "true",
+                "occupancy_mobile": "18666660001",
+                "occupancy_mail": "chenyufan@gmail.com"
+            },
+            {
+                "id": "1",
+                "occupancy_name": "白百何",
+                "occupancy_sex": "false",
+                "occupancy_mobile": "13567890000",
+                "occupancy_mail": "baibaihe@163.com"
+            },
+            {
+                "id": "2",
+                "occupancy_name": "佟大为",
+                "occupancy_sex": "true",
+                "occupancy_mobile": "13655552222",
+                "occupancy_mail": "dongdawei@qq.com"
+            },
+            {
+                "id": "3",
+                "occupancy_name": "金星",
+                "occupancy_sex": "true",
+                "occupancy_mobile": "13644446666",
+                "occupancy_mail": "Venus@126.com"
+            }
+        ],
+        "common_booker": [
+            {
+                "id": "1",
+                "occupancy_name": "王京花",
+                "occupancy_sex": "false",
+                "occupancy_mobile": "13222221111",
+                "occupancy_mail": "king_silk_flower@163.com",
+                "time": "1493867331"
+            },
+            {
+                "id": "0",
+                "occupancy_name": "陈羽凡",
+                "occupancy_sex": "true",
+                "occupancy_mobile": "18666660001",
+                "occupancy_mail": "chenyufan@gmail.com",
+                "time": "1393089914"
+            }
+        ]
+    }
+}

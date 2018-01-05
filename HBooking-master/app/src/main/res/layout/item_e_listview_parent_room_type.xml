@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/main_margin"
+    android:paddingRight="@dimen/main_margin">
+
+
+    <LinearLayout
+        android:id="@+id/parent_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/parent_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="这是父item"
+            android:textColor="@color/text_color_black_b"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/parent_room_baseprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是父item"
+            android:textColor="@color/text_color_heavy"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/parent_room_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这是父item"
+                android:textColor="@color/text_color_gray_a"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/parent_room_introduce_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/parent_room_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="9dp"
+                    android:text="@string/room_introduce"
+                    android:textColor="@color/text_color_heavy"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/parent_choice_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/calendar_selected_range_bg"
+            android:paddingBottom="@dimen/main_margin"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="@dimen/main_margin"
+            android:text="@string/choice"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <include layout="@layout/view_line" />
+
+</LinearLayout>

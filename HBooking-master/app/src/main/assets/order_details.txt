@@ -1,0 +1,37 @@
+{
+    "code": "0",
+    "msg": "数据获取成功",
+    "result": {
+        "orderData": {
+            "hotel_info": {
+                "hotel_name": "深圳深航国际酒店",
+                "hotel_locate_pic": "http://www.gdzjdaily.com.cn/ent/attachement/jpg/site2/20111114/0019b91cb67e102b0c1a24.jpg",
+                "hotel_adr": "中国广东省深圳市深南大道6033号金运世纪大厦6G",
+                "hotel_tel": "075582835988"
+            },
+            "order_id": "2017021010102228",
+            "order_status": "0",
+            "pay_status": "1",
+            "occupancy_status": "0",
+            "arrival_date": "1489971900",
+            "departure_date": "1490168705",
+            "room_name": "无敌屌丝房",
+            "room_num": "1",
+            "room_remark": "早餐要鲍鱼煲鸡烫一份",
+            "room_tip": "请于14:00点后办理入住,如果提前到店,视酒店情况确定。\n视客情况可以免费延迟至14:00退房。\n如果您已经支付预付款,我们将扣留全部款项。",
+            "occupancy_info": {
+                "name": "方鸿根",
+                "sex": "true",
+                "mobile": "13544222632",
+                "mail": "fanghonggeng@163.com"
+            },
+            "price_info": {
+                "days": "2",
+                "rooms": "1",
+                "rooms_total": "1688",
+                "service_amount": "200",
+                "total": "1888"
+            }
+        }
+    }
+}

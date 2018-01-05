@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.nettactic.hotelbooking.activity.FillRoomNumActivity">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/view_title_child_fill_order" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/complete_btn"
+        android:layout_below="@+id/title_view"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/room_num"
+                    android:textColor="@color/order_text_color_b"
+                    android:textSize="16sp" />
+
+                <com.nettactic.hotelbooking.widget.AddAndSubView
+                    android:id="@+id/room_num"
+                    android:layout_width="136dp"
+                    android:layout_height="34dp"
+                     />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/complete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/calendar_selected_range_bg"
+        android:gravity="center"
+        android:text="@string/complete"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+
+

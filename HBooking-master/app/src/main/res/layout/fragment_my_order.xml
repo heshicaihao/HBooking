@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/in_view_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <include layout="@layout/view_null_order" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <com.nettactic.hotelbooking.widget.RefreshListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin"
+            android:layout_marginTop="4dp"
+            android:divider="#f1f1f1"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/more_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="28dp"
+            android:paddingTop="28dp">
+
+            <TextView
+                android:id="@+id/more_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/click_to_load_more"
+                android:textColor="@color/text_color"
+                android:drawableRight="@mipmap/icon_more_bottom"
+                android:drawablePadding="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

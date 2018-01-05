@@ -1,0 +1,39 @@
+﻿{
+    "code": "0",
+    "msg": "数据获取成功",
+    "result": {
+        "taxation_charge": "200",
+        "discount": "0",
+        "total_price": "6888",
+        "price_details_list": [
+            {
+                "id": "0",
+                "time_in": "1489476164",
+                "time_out": "1489562564",
+                "num": "1",
+                "price": "760"
+            },
+            {
+                "id": "1",
+                "time_in": "1489564500",
+                "time_out": "1489650900",
+                "num": "1",
+                "price": "880"
+            },
+            {
+                "id": "2",
+                "time_in": "1489647300",
+                "time_out": "1489820100",
+                "num": "2",
+                "price": "780"
+            },
+            {
+                "id": "3",
+                "time_in": "1489827300",
+                "time_out": "1490000100",
+                "num": "2",
+                "price": "980"
+            }
+        ]
+    }
+}

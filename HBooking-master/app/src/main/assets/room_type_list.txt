@@ -1,0 +1,311 @@
+{
+    "code": "0",
+    "result": [
+        {
+            "hotel_name": "深圳深航国际酒店",
+            "hotel_adr": "中国广东省深圳市深南大道6033号金运世纪大厦6G-H",
+            "hotel_tel": "+86-755-82835988",
+            "hotel_locate": "120.3,80",
+            "hotel_pic": [
+                "url1",
+                "url2",
+                "url3",
+                "url4"
+            ],
+            "hotel_room": [
+                {
+                    "room_name": "高级海景大床房",
+                    "room_baseprice": "799起",
+                    "room_info": "42平米，1.8x2.0大床，无烟房",
+                    "room_info_more": [
+                        {
+                            "title": "客房特色",
+                            "content": [
+                                "建筑面积",
+                                "大床",
+                                "配备空调",
+                                "次房为无烟房",
+                                "支持有线宽带及无线上网",
+                                "可开关窗户"
+                            ]
+                        },
+                        {
+                            "title": "特别待遇",
+                            "content": [
+                                "次房可享受礼宾酒廊待遇",
+                                "免费美食",
+                                "每天可免费试用会议室",
+                                "全体提供清淡小食",
+                                "可延迟至下午四点退房"
+                            ]
+                        }
+                    ],
+                    "room_priceinfo": [
+                        {
+                            "price_name": "深航尊享单早价",
+                            "price_money": "868元",
+                            "price_info": "房价包含服务费，不含早餐",
+                            "price_info_more": [
+                                {
+                                    "title": "详情描述",
+                                    "content": "放假包含两份早餐和服务费"
+                                },
+                                {
+                                    "title": "担保政策",
+                                    "content": "如果您晚点到达，我们不保证保留您的预订"
+                                },
+                                {
+                                    "title": "取消预订",
+                                    "content": "您可以提前一天免费取消预订"
+                                }
+                            ]
+                        },
+                        {
+                            "price_name": "周末优惠价",
+                            "price_money": "858元",
+                            "price_info": "房价不包含服务费，不含早餐",
+                            "price_info_more": [
+                                {
+                                    "title": "详情描述",
+                                    "content": "放假包含两份早餐和服务费"
+                                },
+                                {
+                                    "title": "担保政策",
+                                    "content": "如果您晚点到达，我们不保证保留您的预订"
+                                },
+                                {
+                                    "title": "取消预订",
+                                    "content": "您可以提前一天免费取消预订"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "room_name": "高级海景双拼房",
+                    "room_baseprice": "810起",
+                    "room_info": "42平米，1.8x2.0大床，无烟房",
+                    "room_info_more": [
+                        {
+                            "title": "客房特色",
+                            "content": [
+                                "建筑面积",
+                                "大床",
+                                "配备空调",
+                                "次房为无烟房",
+                                "支持有线宽带及无线上网",
+                                "可开关窗户"
+                            ]
+                        },
+                        {
+                            "title": "特别待遇",
+                            "content": [
+                                "次房可享受礼宾酒廊待遇",
+                                "免费美食",
+                                "每天可免费试用会议室",
+                                "全体提供清淡小食",
+                                "可延迟至下午四点退房"
+                            ]
+                        }
+                    ],
+                    "room_priceinfo": [
+                        {
+                            "price_name": "深航尊享单早价",
+                            "price_money": "868元",
+                            "price_info": "房价包含服务费，不含早餐",
+                            "price_info_more": [
+                                {
+                                    "title": "详情描述",
+                                    "content": "放假包含两份早餐和服务费"
+                                },
+                                {
+                                    "title": "担保政策",
+                                    "content": "如果您晚点到达，我们不保证保留您的预订"
+                                },
+                                {
+                                    "title": "取消预订",
+                                    "content": "您可以提前一天免费取消预订"
+                                }
+                            ]
+                        },
+                        {
+                            "price_name": "周末优惠价",
+                            "price_money": "858元",
+                            "price_info": "房价不包含服务费，不含早餐",
+                            "price_info_more": [
+                                {
+                                    "title": "详情描述",
+                                    "content": "放假包含两份早餐和服务费"
+                                },
+                                {
+                                    "title": "担保政策",
+                                    "content": "如果您晚点到达，我们不保证保留您的预订"
+                                },
+                                {
+                                    "title": "取消预订",
+                                    "content": "您可以提前一天免费取消预订"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "hotel_info": [
+                {
+                    "hotel_intro": "深航酒店是一家。。。",
+                    "hotel_intro_more": "深航酒店是中国航空文化主题酒店的先行者",
+                    "hotel_round": [
+                        {
+                            "title": "设施",
+                            "content": [
+                                {
+                                    "title": "餐饮",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "可提供移动电话/手机",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "免费接收传真",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "餐饮",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "交通",
+                            "content": [
+                                {
+                                    "title": "餐饮",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "可提供移动电话/手机",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "免费接收传真",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "餐饮",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "餐饮",
+                            "content": [
+                                {
+                                    "title": "餐饮",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "可提供移动电话/手机",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "免费接收传真",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                },
+                                {
+                                    "title": "餐饮",
+                                    "content": [
+                                        "value",
+                                        "value",
+                                        "value",
+                                        "value"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "title": "景点购物",
+                            "content": [
+                                {
+                                    "title": "欢乐海岸",
+                                    "content": "欢乐海岸是一个大型亲水综合体"
+                                },
+                                {
+                                    "title": "世界之窗",
+                                    "content": "世界之窗是一个大型亲水综合体"
+                                },
+                                {
+                                    "title": "欢乐谷",
+                                    "content": "欢乐谷是一个大型亲水综合体"
+                                },
+                                {
+                                    "title": "锦绣中华",
+                                    "content": "锦绣中华是一个大型亲水综合体"
+                                },
+                                {
+                                    "title": "民族文化村",
+                                    "content": "民族文化村是一个大型亲水综合体"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

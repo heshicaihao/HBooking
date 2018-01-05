@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fill_person_info_basics_info_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/main_margin"
+    android:layout_marginRight="@dimen/main_margin"
+    android:layout_marginTop="19dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/full_name"
+        android:textColor="@color/text_color_gray_a"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_bg"
+            android:cursorVisible="false"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:paddingRight="35dp"
+            android:textColor="@color/input_text_color"
+            android:textColorHint="@color/main_text_dark"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/name_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="8dp"
+            android:src="@mipmap/input_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="@string/call"
+        android:textColor="@color/text_color_gray_a"
+        android:textSize="14sp" />
+
+    <com.nettactic.hotelbooking.widget.ChoiceSexView
+        android:id="@+id/choice_sex_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="@string/phone"
+        android:textColor="@color/text_color_gray_a"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_bg"
+            android:cursorVisible="false"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="35dp"
+            android:textColor="@color/input_text_color"
+            android:textColorHint="@color/main_text_dark"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/phone_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:src="@mipmap/input_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_prompt_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/phone_prompt"
+            android:textColor="@color/red_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/text_color_gray_a"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/email_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="@string/email"
+        android:textColor="@color/text_color_gray_a"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_bg"
+            android:cursorVisible="false"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:paddingRight="35dp"
+            android:textColor="@color/input_text_color"
+            android:textColorHint="@color/main_text_dark"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/email_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="8dp"
+            android:src="@mipmap/input_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/save_and_next_auto_fill_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/save_and_next_auto_fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/save_and_next_auto_fill"
+            android:textColor="@color/text_color_gray_a"
+            android:textSize="15sp" />
+
+        <com.nettactic.hotelbooking.widget.SwitchView
+            android:id="@+id/switch_view"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
+

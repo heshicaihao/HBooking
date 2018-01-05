@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.nettactic.hotelbooking.activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title_view"
+            layout="@layout/view_title_common" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_view">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_margin"
+                android:layout_marginRight="@dimen/main_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/company_introduction_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/company_introduction"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+
+                <LinearLayout
+                    android:id="@+id/brand_introduction_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/brand_introduction"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/win_win_cooperation_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/win_win_cooperation"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+
+                <LinearLayout
+                    android:id="@+id/contact_us_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/contact_us"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/version_info_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/version_info"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/version_info_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="V 5.2.0.523"
+                        android:textColor="@color/main_text_dark"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/view_floating_back" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginLeft="@dimen/main_margin"
+        android:layout_marginRight="@dimen/main_margin"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:text="@string/title"
+        android:textColor="@color/text_color_black"
+        android:textSize="20sp" />
+
+    <include layout="@layout/view_line" />
+
+</LinearLayout>

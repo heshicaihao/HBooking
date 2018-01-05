@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Square, Inc. -->
+
+<resources>
+
+  <string name="day_name_format">EEE</string>
+  <string name="invalid_date">日期只能 %1$s 到 %2$s之间.</string>
+  <string name="month_name_format">yyyy年MM月</string>
+  <string name="week_01">日</string>
+  <string name="week_02">一</string>
+  <string name="week_03">二</string>
+  <string name="week_04">三</string>
+  <string name="week_05">四</string>
+  <string name="week_06">五</string>
+  <string name="week_07">六</string>
+
+</resources>

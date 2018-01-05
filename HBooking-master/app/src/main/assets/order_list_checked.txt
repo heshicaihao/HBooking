@@ -1,0 +1,97 @@
+{
+    "code": "0",
+    "msg": "数据获取成功",
+    "result": {
+        "pager_total": "1",
+        "orderData": [
+            {
+                "order_id": "201703191540741",
+                "createtime": "1492587691",
+                "order_status": "0",
+                "pay_status": "1",
+                "occupancy_status": "0",
+                "room_type": "无敌屌丝房",
+                "user_name": "方鸿根",
+                "arrival_date": "1489971900",
+                "departure_date": "1490231100"
+            },
+            {
+                "order_id": "201703251540741",
+                "createtime": "1490403900",
+                "order_status": "0",
+                "pay_status": "1",
+                "occupancy_status": "0",
+                "room_type": "高级海景大床房",
+                "user_name": "徐琪昌",
+                "arrival_date": "1490403900",
+                "departure_date": "1490490300"
+            },
+            {
+                "order_id": "201703271540741",
+                "createtime": "1490576700",
+                "order_status": "0",
+                "pay_status": "1",
+                "occupancy_status": "0",
+                "room_type": "经济高端商务房",
+                "user_name": "何瑜",
+                "arrival_date": "1490576700",
+                "departure_date": "1490663100"
+            },
+            {
+                "order_id": "201704011540741",
+                "createtime": "1491008700",
+                "order_status": "0",
+                "pay_status": "1",
+                "occupancy_status": "0",
+                "room_type": "超大双人床房",
+                "user_name": "周德发",
+                "arrival_date": "1491008700",
+                "departure_date": "1491095100"
+            },
+            {
+                "order_id": "201703191540741",
+                "createtime": "1492587691",
+                "order_status": "0",
+                "pay_status": "1",
+                "occupancy_status": "0",
+                "room_type": "无敌屌丝房",
+                "user_name": "方鸿根",
+                "arrival_date": "1489971900",
+                "departure_date": "1490231100"
+            },
+            {
+                "order_id": "201703251540741",
+                "createtime": "1490403900",
+                "order_status": "0",
+                "pay_status": "1",
+                "occupancy_status": "0",
+                "room_type": "高级海景大床房",
+                "user_name": "徐琪昌",
+                "arrival_date": "1490403900",
+                "departure_date": "1490490300"
+            },
+            {
+                "order_id": "201703271540741",
+                "createtime": "1490576700",
+                "order_status": "0",
+                "pay_status": "1",
+                "occupancy_status": "0",
+                "room_type": "经济高端商务房",
+                "user_name": "何瑜",
+                "arrival_date": "1490576700",
+                "departure_date": "1490663100"
+            },
+            {
+                "order_id": "201704011540741",
+                "createtime": "1491008700",
+                "order_status": "0",
+                "pay_status": "1",
+                "occupancy_status": "0",
+                "room_type": "超大双人床房",
+                "user_name": "周德发",
+                "arrival_date": "1491008700",
+                "departure_date": "1491095100"
+            }
+        ]
+    }
+}

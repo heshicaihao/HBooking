@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/man_rl"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_left_bg_normal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/man_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/man_normal" />
+
+        <TextView
+            android:id="@+id/man_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/man_iv"
+            android:gravity="center"
+            android:text="@string/man"
+            android:textColor="@color/text_color_gray_a"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/woman_rl"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_right_bg_normal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/woman_iv"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/woman_normal" />
+
+        <TextView
+            android:id="@+id/woman_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/woman_iv"
+            android:gravity="center"
+            android:text="@string/woman"
+            android:textColor="@color/text_color_gray_a"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</LinearLayout>
+

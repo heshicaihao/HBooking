@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.nettactic.hotelbooking.activity.FillOtherDemandsActivity">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/view_title_child_fill_order" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/complete_btn"
+        android:layout_below="@+id/title_view"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin"
+            android:layout_marginRight="@dimen/main_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/other_demands"
+                android:textColor="@color/order_text_color_b"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/other_demands_edit"
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/input_bg"
+                android:cursorVisible="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="left|top"
+                android:textColor="@color/input_text_color"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/complete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/calendar_selected_range_bg"
+        android:gravity="center"
+        android:text="@string/complete"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fill_order_check_in_time_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/single_hotel_full_name"
+        android:textColor="@color/order_text_color_c"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="9dp">
+
+        <TextView
+            android:id="@+id/time_in_and_time_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="3月12 至 3月15"
+            android:textColor="@color/order_text_color_c"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/much_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="22dp"
+            android:text="共3晚"
+            android:textColor="@color/order_text_color_c"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nettactic.hotelbooking">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!--
+            <permission
+            android:name="com.nettactic.hotelbooking.permission.JPUSH_MESSAGE"
+            android:protectionLevel="signature" />
+    -->
+
+
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <!-- <uses-permission android:name="com.nettactic.hotelbooking.permission.JPUSH_MESSAGE" /> -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".common.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c222d797451a1f44ca356afa55aa5c51" />
+
+        <activity
+            android:name=".activity.StartActivity"
+            android:theme="@style/NoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@style/NoTitle" />
+        <activity
+            android:name=".activity.JumpActivity"
+            android:theme="@style/NoTitle" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.MyOrderActivity" />
+        <activity android:name=".activity.MyPointsActivity" />
+        <activity android:name=".activity.MeActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/MybarTheme" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/MybarTheme" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:theme="@style/MybarTheme" />
+        <activity
+            android:name=".activity.RoomDetailsActivity"
+            android:theme="@style/MybarTheme" />
+        <activity
+            android:name=".activity.RoomRateDetailsActivity"
+            android:theme="@style/MybarTheme" />
+        <activity android:name=".activity.OtherWebActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.QueryRoomActivity" />
+        <activity android:name=".activity.RoomTypeListActivity" />
+        <activity android:name=".activity.HotelInfoActivity" />
+        <activity android:name=".activity.HotelInfoChildActivity" />
+        <activity android:name=".activity.ReviseMyDataActivity" />
+        <activity android:name=".activity.RevisePasswordActivity" />
+        <activity android:name=".activity.UserCourtesyActivity" />
+        <activity android:name=".activity.OrderDetailsActivity" />
+        <activity android:name=".activity.FillOrderActivity" />
+        <activity android:name=".activity.OrderPayActivity" />
+        <activity android:name=".activity.PriceDetailsActivity" />
+        <activity android:name=".activity.ReminderDetailsActivity" />
+        <activity android:name=".activity.FillPersonInfoActivity" />
+        <activity android:name=".activity.FillRoomNumActivity" />
+        <activity android:name=".activity.FillOtherDemandsActivity" />
+        <activity android:name=".activity.PaySuccessActivity" />
+        <activity android:name=".amap.activity.AMapLocationActivity" />
+        <activity android:name=".amap.activity.AMapNavigationActivity" />
+        <activity android:name=".amap.activity.AMNDriveDetailActivity" />
+        <activity android:name=".amap.activity.AMNWalkDetailActivity" />
+        <activity android:name=".amap.activity.AMNBusDetailActivity" />
+        <activity android:name=".amap.activity.AMapTTSRouteNaviActivity" />
+
+        <service android:name=".update.DownloadService" />
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105084229" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.nettactic.hotelbooking.activity.OrderDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/title_view"
+            layout="@layout/view_title_common_noline" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/view_order_details_order_info" />
+
+                    <include layout="@layout/view_hotel_info" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/main_margin"
+                    android:layout_marginRight="@dimen/main_margin"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/view_order_details_check_in_time" />
+                    <include layout="@layout/view_line" />
+                    <include layout="@layout/view_order_details_room_info" />
+                    <include layout="@layout/view_line" />
+                    <include layout="@layout/view_order_details_check_in_info" />
+                    <include layout="@layout/view_line" />
+                    <include layout="@layout/view_order_details_other_demands_info" />
+                    <include layout="@layout/view_line" />
+                    <include layout="@layout/view_order_details_price_details_info" />
+                    <include layout="@layout/view_line" />
+                    <include layout="@layout/view_order_details_reminder_info" />
+                    <include layout="@layout/view_line" />
+                    <include layout="@layout/view_order_details_bottom_btn" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/view_floating_back" />
+
+</RelativeLayout>

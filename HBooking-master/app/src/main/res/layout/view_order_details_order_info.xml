@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/expandable_listview_child_bg_color"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/main_margin"
+        android:text="@string/order_id"
+        android:textColor="@color/order_text_color_d"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/order_id_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:textColor="@color/order_text_color_d"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="45dp"
+        android:textColor="@color/order_text_color_e"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.nettactic.hotelbooking.activity.MeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="60dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/title_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/me_top_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/me_top_pic" />
+
+                <RelativeLayout
+                    android:id="@+id/bottom_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/me_top_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/bottom_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="26dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/avatar_iv"
+                            android:layout_width="51dp"
+                            android:layout_height="51dp"
+                            android:src="@mipmap/default_avatar" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:gravity="top|left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/card_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="top|left"
+                                android:text="@string/test_card_number"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="top|left"
+                                android:text="@string/test_user_name"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/user_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/tab_works"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/convertible"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/consumption_points_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:text="9800"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/consumption_points"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_margin"
+                android:layout_marginRight="@dimen/main_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/my_order"
+                        android:layout_width="0dp"
+                        android:layout_height="41dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/me_text_bg_color"
+                        android:gravity="center"
+                        android:text="@string/my_booking"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/my_consumption_points"
+                        android:layout_width="0dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/me_text_bg_color"
+                        android:gravity="center"
+                        android:text="@string/my_consumption_points"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/revise_my_data"
+                        android:layout_width="0dp"
+                        android:layout_height="41dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/me_text_bg_color"
+                        android:gravity="center"
+                        android:text="@string/revise_my_data"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/revise_password"
+                        android:layout_width="0dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/me_text_bg_color"
+                        android:gravity="center"
+                        android:text="@string/revise_password"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_courtesy_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/user_courtesy"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="16sp" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+                <LinearLayout
+                    android:id="@+id/know_club_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/know_club"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/more_width"
+                        android:layout_height="@dimen/more_width"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+                <include layout="@layout/view_line" />
+
+                <TextView
+                    android:id="@+id/logout_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/calendar_selected_range_bg"
+                    android:gravity="center"
+                    android:text="@string/logout"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_floating_me_setting" />
+    <include layout="@layout/view_floating_me" />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.nettactic.hotelbooking.activity.FillPersonInfoActivity">
+
+    <include
+        android:id="@+id/title_view"
+        layout="@layout/view_title_child_fill_order_no_line" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/complete_btn"
+        android:layout_below="@+id/title_view"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_fill_person_info_unlogin_line" />
+
+            <include layout="@layout/view_fill_person_info_user_info" />
+
+            <include layout="@layout/view_fill_person_info_often_person" />
+
+            <include layout="@layout/view_fill_person_info_basics_info" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/complete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/calendar_selected_range_bg"
+        android:gravity="center"
+        android:text="@string/complete"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
+
+
+

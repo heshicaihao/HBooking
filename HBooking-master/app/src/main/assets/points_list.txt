@@ -1,0 +1,52 @@
+﻿{
+    "code": "0",
+    "msg": "数据获取成功",
+    "result": {
+        "pager_total": "1",
+        "available_integral": "58801",
+        "total_integral": "58801",
+        "freeze_integral": "0",
+        "integral_info": [
+            {
+                "id": "0",
+                "date": "1483280148",
+                "integral": "5000"
+            },
+            {
+                "id": "1",
+                "date": "1485180948",
+                "integral": "6000"
+            },
+            {
+                "id": "2",
+                "date": "1486217748",
+                "integral": "10000"
+            },
+            {
+                "id": "3",
+                "date": "1490105748",
+                "integral": "8000"
+            },
+            {
+                "id": "4",
+                "date": "1490624100",
+                "integral": "7801"
+            },
+            {
+                "id": "5",
+                "date": "1490710500",
+                "integral": "-30000"
+            },
+            {
+                "id": "6",
+                "date": "1492006555",
+                "integral": "12000"
+            },
+            {
+                "id": "1",
+                "date": "1492686360",
+                "integral": "40000"
+            }
+        ]
+    }
+}
